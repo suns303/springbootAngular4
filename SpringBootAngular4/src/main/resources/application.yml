@@ -1,0 +1,17 @@
+  liquibase:
+    enabled: false
+    
+  spring:
+    datasource:
+      url: jdbc:postgresql://192.168.0.60:5432/postgres
+      username: dev
+      password: 1234
+    jpa:
+      generate-ddl: true
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        
+  logging:
+    level:
+      org.hibernate: info
